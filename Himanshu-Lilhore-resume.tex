@@ -1,0 +1,202 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Himanshu Lilhore
+% Based off of: 
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{svg}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingSmall}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{0pt}
+}
+
+\newcommand{\resumeSubheadingMedium}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} \\
+    \end{tabular*}\vspace{0pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{5pt} 
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeFirstProjectHeading}[2]{
+    \vspace{0pt} 
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Himanshu Lilhore}} \\
+  \href{https://www.linkedin.com/in/himanshulilhore/}{\faLinkedin \hspace{0.5 mm} LinkedIn: himanshulilhore} & \href{mailto:himanshulilhore@gmail.com}{himanshulilhore@gmail.com} \\
+  \href{https://github.com/Himanshu-Lilhore}{\faGithub \hspace{0.5 mm} GitHub: Himanshu-Lilhore} & +91-9584990462 \\
+  \href{https://x.com/HimanshuLilhore}{\faTwitter \hspace{0.5 mm} X (Twitter): HimanshuLilhore} & \href{https://himanshu-lilhore.github.io/Portfolio-Website/}{\underline{Portfolio-Website}} \\
+  \href{https://leetcode.com/u/Himanshu_Lilhore/}{\faTerminal \hspace{0.5 mm} Leetcode: Himanshu\_Lilhore} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University Institute of Technology, RGPV}{Bhopal, India}
+      {Bachelor of Technology in Computer Science; CGPA: 7.68/10}{Aug. 2018 -- June 2022}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\href{https://github.com/Himanshu-Lilhore/Skillswap}{\textbf{SkillSwap}} $|$ \emph{NodeJS, ReactJS, MongoDB Atlas, Express, Tailwind CSS} $|$ \href{https://skillswap-seven.vercel.app/}{\emph{Live Link}}}{}
+      \resumeItemListStart
+        \resumeItem{Get mentorship or collaborate with people based on skills \& interests (basically Tinder for techies).}
+        \resumeItem{Developed using \textbf{ReactJS} for a beautiful frontend \& \textbf{NodeJS} for a secure backend.}
+        \resumeItem{Implemented \textbf{Authentication} from scratch for Sign-In.}
+        \resumeItem{Users register, swipe through profile cards of other people \& eventually getting a match if they match back.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\href{https://github.com/Himanshu-Lilhore/OneClick}{\textbf{OneClick - browser extension}} $|$ \emph{Javascript, Tailwind CSS, HTML5} $|$ \href{https://microsoftedge.microsoft.com/addons/detail/oneclick/glhmdjhpacepphpanbihpaidmgfbppkg}{\emph{Live on Microsoft add-ons store}}}{}
+      \resumeItemListStart
+        \resumeItem{Browser extension designed using \textbf{Javascript} to streamline manual testing tasks \& reduce repetitive actions.} 
+        \resumeItem{Uses mouse \& click events to identify elements and \textbf{automate testing work.}}
+        \resumeItem{A sticky draggable pop-up built from scratch which required writing functions based on mouse movements.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE & POSITION OF RESPONSIBILITY-----------
+\section{Experience \& Position of Responsibility}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Analyst}{Deloitte USI}{Dec 2022 -- May 2024}{}
+      \resumeItemListStart
+        \resumeItem{Worked on web development stacks including MERN and Java in backend for health projects.}
+        \resumeItem{Worked on production level web development \& also making internal tools (being used by team of 200+ people on regular basis)}
+        \resumeItem{Collaborated with cross-functional teams to integrate new features into client projects.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+  \resumeItemListStart
+    \resumeItem{Participated in more than \textbf{22} online challenges on \textbf{CodeChef}, while being a \textbf{3* competitive programmer} on the platform, and achieved a Global rank of \textbf{57} in one of the challenges.}
+    \resumeItem{Consistent \textbf{Open source contributor for 4+ years}, collaborating with people for smaller projects, contributing to large projects \& making personal projects.}
+    \resumeItem{Scored \textbf{100/100} in class 12th CBSE boards for Informatics Practices, which is an introduction to Computer Science for high schoolers.}
+  \resumeItemListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages}{: Javascript, Typescript, Java, C/C++, Python} \\
+      \textbf{Technologies}{: Node.js, React.js, Express.js, Socket.IO, Tailwind, Selenium, HTML, CSS} \\
+      \textbf{Databases}{: MongoDB, MySQL, OracleDB} \\
+      \textbf{CI/CD}{: GitHub Pages, Vercel, GitHub Actions, Unit Testing} \\
+      \textbf{Developer Tools}{: Git/GitHub, VS Code, Eclipse, Jira, Jama} \\
+    }}
+  \end{itemize}
+
+\end{document}
